@@ -1,13 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import saisreekar from './saisreekar.jpeg';
+import chintu from './chintu.jpeg';
 import './App.css';
 
 const App = () => {
   const [images, setImages] = useState([
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?w=400",
-      title: "Troll Face",
+      src: chintu,
+      title: "Doge Wow",
       likes: 69,
       description: "U MAD BRO? 😏",
       comments: [
@@ -17,26 +19,16 @@ const App = () => {
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1611329855225-2f2013643a5e?w=400",
-      title: "Doge Wow",
+      src: saisreekar,
+      title: "KONDAPOOK",
       likes: 420,
-      description: "SUCH ANIMATE. VERY REACT. WOW. 🐶",
+      description: "SUCH SMILE. VERY CUTE. WOW. 🐒",
       comments: [
         { id: 1, text: "Much wow! 🚀", user: "CryptoDoge" },
         { id: 2, text: "To the moon! 🌕", user: "ShibaInu" }
       ]
     },
-    {
-      id: 3,
-      src: "https://images.unsplash.com/photo-1623684225795-a78c0b6d6c540?w=400",
-      title: "Dancing Banana",
-      likes: 1337,
-      description: "PEEL THE ANIMATION! 🍌",
-      comments: [
-        { id: 1, text: "This is apeeling! 🦍", user: "MonkeyMan" },
-        { id: 2, text: "I'm going bananas! 🐒", user: "BananaLover" }
-      ]
-    }
+   
   ]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
@@ -292,7 +284,7 @@ const App = () => {
           whileTap={{ scale: 0.9 }}
           onClick={triggerFileInput}
         >
-          🚀 UPLOAD DOG
+          🚀 MG
         </motion.button>
         
         <input
